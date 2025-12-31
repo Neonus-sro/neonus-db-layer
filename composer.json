@@ -1,0 +1,20 @@
+{
+    "name": "nws/db-layer",
+    "description": "A custom DBAL-based repository pattern.",
+    "require": {
+        "doctrine/dbal": "^3.0 || ^4.0",
+        "symfony/dependency-injection": "^8.0"
+    },
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "NEONUS, s.r.o.",
+            "email": "info@neonus.sk"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Nws\\DbLayer\\": "src/"
+        }
+    }
+}
