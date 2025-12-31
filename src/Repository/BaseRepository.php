@@ -1,12 +1,12 @@
 <?php
 
-namespace Nws\DbLayer\Repository;
+namespace Neonus\DbLayer\Repository;
 
-use Nws\DbLayer\Entity\BaseEntity;
-use Nws\DbLayer\Lib\EntityFactory;
+use Neonus\DbLayer\Entity\BaseEntity;
+use Neonus\DbLayer\Lib\EntityFactory;
 use Doctrine\DBAL\Connection;
 use Doctrine\DBAL\ParameterType;
-use Nws\DbLayer\Interfaces\RepositoryInterface;
+use Neonus\DbLayer\Interfaces\RepositoryInterface;
 
 abstract class BaseRepository implements RepositoryInterface
 {

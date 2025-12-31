@@ -1,6 +1,6 @@
 <?php
 
-namespace Nws\DbLayer\Interfaces;
+namespace Neonus\DbLayer\Interfaces;
 
 interface HydratationInterface
 {

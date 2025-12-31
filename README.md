@@ -1,4 +1,4 @@
-# NWS DB Layer
+# Neonus DB Layer
 
 A lightweight PHP database abstraction layer built on top of **Doctrine DBAL** with a repository pattern implementation.
 
@@ -21,7 +21,7 @@ This package provides a clean, extensible database layer for PHP applications us
 ## Installation
 
 ```bash
-composer require nws/db-layer
+composer require neonus/db-layer
 ```
 
 ## Requirements
@@ -39,7 +39,7 @@ Extend `BaseEntity` to define your domain model:
 ```php
 namespace App\Entity;
 
-use Nws\DbLayer\Entity\BaseEntity;
+use Neonus\DbLayer\Entity\BaseEntity;
 
 class User extends BaseEntity
 {
@@ -68,7 +68,7 @@ Extend `BaseRepository` to implement data access logic:
 ```php
 namespace App\Repository;
 
-use Nws\DbLayer\Repository\BaseRepository;
+use Neonus\DbLayer\Repository\BaseRepository;
 use App\Entity\User;
 
 class UserRepository extends BaseRepository

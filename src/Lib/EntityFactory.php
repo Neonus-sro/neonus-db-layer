@@ -1,6 +1,6 @@
 <?php
 
-namespace Nws\DbLayer\Lib;
+namespace Neonus\DbLayer\Lib;
 
 use Symfony\Component\DependencyInjection\ParameterBag\ParameterBagInterface;
 

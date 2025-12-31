@@ -1,8 +1,8 @@
 <?php
 
-namespace Nws\DbLayer\Entity;
+namespace Neonus\DbLayer\Entity;
 
-use Nws\DbLayer\Interfaces\HydratationInterface;
+use Neonus\DbLayer\Interfaces\HydratationInterface;
 use DateTime;
 use Exception;
 use ReflectionClass;

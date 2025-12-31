@@ -1,5 +1,5 @@
 {
-    "name": "nws/db-layer",
+    "name": "neonus/db-layer",
     "description": "A custom DBAL-based repository pattern.",
     "require": {
         "doctrine/dbal": "^3.0 || ^4.0",
@@ -14,7 +14,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Nws\\DbLayer\\": "src/"
+            "Neonus\\DbLayer\\": "src/"
         }
     }
 }
