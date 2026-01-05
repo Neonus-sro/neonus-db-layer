@@ -36,6 +36,8 @@ abstract class BaseRepository implements RepositoryInterface
     }
 
     /**
+     * Get record by ID.
+     *
      * @param int $id
      * @return BaseEntity|bool
      * @throws \Doctrine\DBAL\Exception
@@ -49,6 +51,18 @@ abstract class BaseRepository implements RepositoryInterface
         } else {
             return false;
         }
+    }
+
+    /**
+     * Delete record by ID.
+     *
+     * @param int $id
+     * @return int Number of deleted records
+     * @throws \Doctrine\DBAL\Exception
+     */
+    public function delete(int $id): int
+    {
+        return $this->db->delete($this->getTableName(), ['id' => $id]);
     }
 
     /**
