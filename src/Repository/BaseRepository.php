@@ -8,6 +8,9 @@ use Doctrine\DBAL\Connection;
 use Doctrine\DBAL\ParameterType;
 use Neonus\DbLayer\Interfaces\RepositoryInterface;
 
+/**
+ * @template T of BaseEntity
+ */
 abstract class BaseRepository implements RepositoryInterface
 {
     /** @var Connection */
@@ -39,10 +42,10 @@ abstract class BaseRepository implements RepositoryInterface
      * Get record by ID.
      *
      * @param int $id
-     * @return BaseEntity|bool
+     * @return T|bool
      * @throws \Doctrine\DBAL\Exception
      */
-    public function get(int $id)
+    public function get(int $id): mixed
     {
         $stmt = $this->db->executeQuery('SELECT * FROM ' . $this->getTableName() . ' WHERE id = ?', [$id]);
 
@@ -67,10 +70,10 @@ abstract class BaseRepository implements RepositoryInterface
 
     /**
      * @param string $url
-     * @return BaseEntity|bool
+     * @return T|bool
      * @throws \Doctrine\DBAL\Exception
      */
-    public function getByUrl(string $url)
+    public function getByUrl(string $url): mixed
     {
         $stmt = $this->db->executeQuery('SELECT * FROM ' . $this->getTableName() . ' WHERE url = ?', [$url]);
         if ($data = $stmt->fetchAssociative()) {
