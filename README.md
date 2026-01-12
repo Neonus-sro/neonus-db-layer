@@ -141,6 +141,10 @@ src/
     ├── HydratationInterface.php    # Hydration interface
 ```
 
+## Changelog
+
+See [CHANGELOG.md](CHANGELOG.md) for a list of changes in each release.
+
 ## License
 
 Proprietary - NEONUS, s.r.o.
